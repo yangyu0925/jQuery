@@ -114,6 +114,90 @@
  $("#lead-banner").remove();
  */
 
+/**
+ * lesson-12
+ * Changing Attributes
+ *
+
+ $("#contact img").removeAttr('alt');
+
+ $("#contact img").attr('alt');
+ */
+
+/**
+ * lesson-13
+ * CSS with jQuery
+ *
+    $("social-nav").css("top", "-200px").css("left", "100px");
+
+     var myObject = {
+        "height": "40px",
+        "speed": "100px"
+    }
+
+     $("social-nav").css({
+        "height": "40px",
+        "speed": "100px"
+    });
+ */
+
+/**
+ * lesson-14
+ * CSS with jQuery
+ *
+     $("header .wrapper").removeClass("wrapper");
+     $("header .wrapper").addClass("wrapper");
+     $("header .wrapper").toggleClass("wrapper");
+ */
+
+/**
+ * lesson-15
+ * Binding & Unbinding Events
+ *
+     $("#points-of-sale li").on('click', function () {
+        $(this).css({'background' : 'pink'});
+        $("#points-of-sale li").off('click')
+    })
+ */
+
+/**
+ * lesson-16
+ * Event Helpers
+ *
+     $("#points-of-sale li").click(function () {
+        console.log('hello');
+     })
+ */
+
+/**
+ * lesson-17
+ * Document Ready vs Window Load
+ *
+     $(document).ready(function () {
+
+    })
+
+     $(function () {
+
+    })
+
+     $(window).load(function () {
+
+    })
+ */
+
+/**
+ * lesson-18
+ * The Event Object in jQuery
+ *
+ *
+     $("*").click(function (e) {
+        console.log(e.target);
+        console.log(e.type);
+        e.stopPropageation(); //阻止 click 事件冒泡到父元素
+        console.log("X: " + e.pageX + ", Y: " + e.pageY); //显示鼠标指针的位置：
 
 
+    })
 
+ */
